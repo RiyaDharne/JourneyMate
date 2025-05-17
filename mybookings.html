@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Schedule</title>
+  <link rel="stylesheet" href="mybookings.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="upcoming">Upcoming</button>
+      <button class="tab-btn" data-tab="completed">Completed</button>
+    </div>
+    <div class="sort">
+      <p>Sort By: <span class="sort-option">Departure Date</span></p>
+      <p>Last Updated: <span id="last-updated">17:05:40 21 Nov, 2024</span></p>
+    </div>
+  </div>
+
+  <!-- Note Section -->
+  <div class="note">
+    <p>
+      <strong>Note:</strong> Departure Time and Arrival Time displayed are liable to change. 
+      Please check correct departure & arrival time from Railway Station Enquiry. 
+      Dial 139 or SMS RAIL to 139.
+    </p>
+  </div>
+
+  <!-- Tab Content -->
+  <div class="content" id="upcoming">
+    <p>Upcoming train schedules will be displayed here.</p>
+  </div>
+  <div class="content hidden" id="completed">
+    <p>Completed train schedules will be displayed here.</p>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="footer-nav">
+    <button class="nav-btn active">
+      <i class="fas fa-home"></i> <!-- Home Icon -->
+      <span><a href ="homepage.html">Home</span></a>
+    </button>
+    <button class="nav-btn">
+      <i class="fas fa-user"></i> <!-- Account Icon -->
+      <span><a href="myaccount.html">Account</span></a>
+    </button>
+    <button class="nav-btn">
+      <i class="fas fa-shopping-cart"></i> <!-- Shop Icon -->
+      <span>Shop</span>
+    </button>
+    <button class="nav-btn">
+      <i class="fas fa-money-check-alt"></i> <!-- Transactions Icon -->
+      <span><a href="transaction.html">Transactions</span></a>
+    </button>
+    <button class="nav-btn">
+      <i class="fas fa-ellipsis-h"></i> <!-- More Icon -->
+      <span>More</span>
+    </button>
+  </div>
+  
+
+  <script src="mybookings.js"></script>
+</body>
+</html>

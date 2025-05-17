@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Passenger Details</title>
+                <link rel="stylesheet" href="passenger-details.css">
+            </head>
+            <body>
+                <div class="container">
+                    <div class="header">PASSENGER DETAILS</div>
+                    <div class="content">
+                        <div class="journey-info">
+                            <h3>TUTARI EXPRESS (11003)</h3>
+                            <p>00:05 - 10:25 (10h 20m)</p>
+                            <p>Dadar (DR) → Sawantwadi Road (SWV)</p>
+                            <p>Mon, 24 Mar 2025</p>
+                            <p class="class-type">Sleeper (SL) | General (GN)</p>
+                        </div>
+                        <div class="passenger-list">
+                            <h4>Select Passenger</h4>
+                            <ul id="passenger-list">
+                                <li>Rhea (20 F) <button onclick="removePassenger(this)">Delete</button></li>
+                            </ul>
+                            <button onclick="addPassenger()">+ Add New</button>
+                            <button>+ Add Existing</button>
+                            <button>+ Add Infant With Berth</button>
+                            <button>+ Add Infant Without Berth</button>
+                        </div>
+                        <div class="preferences">
+                            <h4>Other Preference</h4>
+                            <input type="checkbox"> Consider for auto upgradation<br>
+                            <input type="checkbox"> Book Only If Confirm Berth Are Allocated<br>
+                            <input type="text" placeholder="Enter Preferred Coach Number">
+                        </div>
+                        <div class="reservation">
+                            <h4>Reservation Choice</h4>
+                            <select>
+                                <option>None</option>
+                                <option>Lower Berth</option>
+                                <option>Window Seat</option>
+                            </select>
+                        </div>
+                        <div class="gstin">
+                            <h4>GSTIN Details for Tax Benefits (Optional)</h4>
+                            <input type="text" placeholder="Enter GSTIN Number">
+                        </div>
+                        <div class="payment-mode">
+                            <h4>Payment Mode</h4>
+                            <input type="radio" name="payment" checked> Pay through Credit & Debit Cards/Net Banking/Wallets/Others <br>
+                            <span>Convenience Fee: ₹15.1 + GST</span><br>
+                            <input type="radio" name="payment"> Pay through BHIM/UPI <br>
+                            <span>Convenience Fee: ₹10.1 + GST</span>
+                        </div>
+                        <div class="insurance">
+                            <h4>Travel Insurance</h4>
+                            <p>Do you want to take Travel Insurance (₹0.45/person)?</p>
+                            <input type="radio" name="insurance"> Yes, and I accept the travel insurance<br>
+                            <a href="#">Terms & Conditions</a><br>
+                            <input type="radio" name="insurance"> No, I do not want travel insurance
+                        </div>
+                        <div class="contact">
+                            <h4>Passenger Mobile Number</h4>
+                            <input type="text" placeholder="+91- 9876543210">
+                        </div>
+                        <button class="review-btn"><a href="card-payment.html">PAYMENT</button></a>
+                    </div>
+                </div>
+                <script src="passenger-details.js"></script>
+            </body>
+            </html>

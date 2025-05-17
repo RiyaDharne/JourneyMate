@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Ticket</title>
+    <link rel="stylesheet" href="cancel ticket.css">
+</head>
+<body>
+
+    <!-- Journey Details -->
+    <div class="journey-container" id="journeyContainer">
+        <h2>Upcoming Journey</h2>
+
+        <div class="train-info">
+            <div class="train-name">
+                <p><strong>Train Number:</strong> 12511</p>
+                <p><strong>Train Name:</strong> Rajdhani Express</p>
+            </div>
+            <div class="station-info">
+                <p><strong>Departure:</strong> 12:30 PM</p>
+                <p><strong>Platform:</strong> 5</p>
+            </div>
+        </div>
+
+        <div class="journey-status">
+            <p class="status">Status: <span id="status">Upcoming</span></p>
+        </div>
+
+        <div class="train-animation">
+            <div class="train" id="train"></div>
+            <div class="train-smoke" id="trainSmoke"></div>
+        </div>
+
+        <!-- Cancel Ticket Button -->
+        <button class="cancel-btn" onclick="showCancelModal()">Cancel Ticket</button>
+
+        <!-- Modal for Cancel Ticket -->
+        <div id="cancelModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeCancelModal()">&times;</span>
+                <h3>Are you sure you want to cancel your ticket?</h3>
+                <button class="confirm-cancel-btn" onclick="confirmCancel()">Yes, Cancel</button>
+                <button class="cancel-cancel-btn" onclick="closeCancelModal()">No, Keep</button>
+            </div>
+        </div>
+
+        <!-- Ticket Section, initially hidden -->
+        <div class="ticket-container" id="ticketContainer" style="display:none;" onclick="tearTicket()">
+            <div class="ticket">
+                <div class="left-half">🎟 Ticket 🎟</div>
+                <div class="right-half"></div>
+            </div>
+        </div>
+
+        <div class="footer">Powered by JourneyMate</div>
+    </div>
+
+    <script src="cancel ticket.js"></script>
+</body>
+</html>

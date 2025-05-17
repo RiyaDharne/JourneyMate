@@ -1,0 +1,227 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f9; */
+    color: #333;
+    /* background-image: url("Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none; */
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("background1.jpg");
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Header Section */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    background-color: #f7f3e4;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 200px;
+    height: 120px;
+}
+
+.login-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #e64a19;
+}
+
+.register-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #e64a19;
+}
+
+.admin-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-btn:hover {
+    background-color: #e64a19;
+}
+
+
+/* Main Content Section */
+
+.main-content {
+    margin-top: 20px;
+}
+
+.top-section,
+.middle-section,
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.icon {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.info-section {
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+.info-section a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+
+/* Additional Styles */
+
+.service {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    margin: 0;
+    font-size: 14px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .top-section,
+    .middle-section,
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service {
+        width: 80%;
+        margin: 10px 0;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo {
+        margin: 10px 0;
+    }
+    .login-btn {
+        margin: 10px 0;
+    }
+    .icon-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .service {
+        width: 100%;
+    }
+    .icon-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

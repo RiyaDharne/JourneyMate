@@ -1,0 +1,166 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #ff7e5f;
+}
+
+.profile-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: gray;
+}
+
+/* Account Options */
+.account-options {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.account-options li {
+    border-bottom: 1px solid #ddd;
+    background: white;
+    margin: 5px 0;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.account-options li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.account-options a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    gap: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.account-options a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Logout Button */
+.account-options .logout a {
+    color: #ff5858;
+}
+
+/* Footer */
+.footer {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid #ddd;
+}
+
+.footer a {
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+
+.footer-banner {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Bottom Navigation */
+.footer-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .nav-btn i {
+    font-size: 18px;
+  }
+  
+  .nav-btn.active {
+    color: #ff7e5f;
+  }
+  
+  
+  .nav-item {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .nav-item.active {
+    color: #ff7e5f;
+  }
+  

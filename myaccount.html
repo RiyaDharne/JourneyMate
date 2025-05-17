@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="myaccount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="myaccount.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h2>My Account</h2>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="profile">
+        <div class="profile-info">
+            <img src="profile-icon.png" alt="Profile Picture" class="profile-pic">
+            <div>
+                <h3 id="user-name">User Name</h3>
+                <p id="user-email">*********@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Options -->
+    <ul class="account-options">
+        <li>
+            <a href="#">
+                <img src="profile-icon.png" alt="My Profile">
+                <span>My Profile</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="wallet-icon.png" alt="IRCTC eWallet">
+                <span>IRCTC eWallet</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="master-list-icon.png" alt="My Master List">
+                <span>My Master List</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="loyalty-icon.png" alt="Loyalty">
+                <span>Loyalty</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="authenticate-icon.png" alt="Authenticate User">
+                <span>Authenticate User</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="password-icon.png" alt="Change Password">
+                <span>Change Password</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="logout">
+                <img src="logout-icon.png" alt="Logout">
+                <span>Logout</span>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Footer -->
+    <div class="footer-nav">
+        <button class="nav-btn active">
+          <i class="fas fa-home"></i> <!-- Home Icon -->
+          <span><a href ="homepage.html">Home</span></a>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-user"></i> <!-- Account Icon -->
+          <span><a href ="myaccount.html">Account</span></a>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-shopping-cart"></i> <!-- Shop Icon -->
+          <span>Shop</span>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-money-check-alt"></i> <!-- Transactions Icon -->
+          <span><a href="transaction.html">Transactions</span></a>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-ellipsis-h"></i> <!-- More Icon -->
+          <span><a href="more.html">More</span></a>
+        </button>
+      </div>
+          
+</body>
+</html>

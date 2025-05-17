@@ -1,0 +1,67 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.header {
+    background: linear-gradient(to right, #ff7e5f, #ff4e50);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.content {
+    padding: 15px;
+}
+.journey-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.passenger-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+.passenger-list li {
+    display: flex;
+    justify-content: space-between;
+    background: #eee;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.passenger-list button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.contact input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.review-btn {
+    width: 100%;
+    background: #ff4e50;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}

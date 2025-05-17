@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC - Last Transaction</title>
+    <link rel="stylesheet" href="last transaction.css">
+    
+    <link rel="icon" type="image/png" href="JourneyMate-Logo.png">
+    <script src="last transaction.js" defer></script>
+</head>
+<body>
+    <div class="transaction-container">
+        <h2>Last Transaction</h2>
+        <div class="transaction-details">
+            <p><strong>Train:</strong> <span id="train-name">Mandovi Express (10103)</span></p>
+            <p><strong>From:</strong> <span id="from-station">Dadar</span></p>
+            <p><strong>To:</strong> <span id="to-station">Sawantwadi Road</span></p>
+            <p><strong>Journey Date:</strong> <span id="journey-date">Thu, 16 Jan 2025</span></p>
+            <p><strong>Fare:</strong> ₹<span id="fare">255</span></p>
+            <p><strong>Status:</strong> <span class="status success" id="status">Successful</span></p>
+        </div>
+        <button class="view-details-btn">View Full Details</button>
+    </div>
+
+    <script>
+        document.querySelector('.view-details-btn').addEventListener('click', function() {
+            alert('Displaying full transaction details...');
+            // You can redirect to another page or show a modal with full details.
+        });
+    </script>
+</body>
+</html>
