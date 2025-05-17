@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Train Tracking</title>
+    <link rel="stylesheet" href="train-tracking.css">
+    
+    <link rel="icon" type="image/png" href="JourneyMate-Logo.png">
+    <script src="train-tracking.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>IRCTC Train Tracking</h1>
+        <p>Track Real-Time Train Status</p>
+    </header>
+    
+    <main>
+        <section class="train-input-section">
+            <label for="train_number">Enter Train Number:</label>
+            <input type="text" id="train_number" placeholder="e.g., 12345">
+            <button id="track_button">Track Train</button>
+        </section>
+        
+        <section class="tracking-container">
+            <div class="station-list" id="stationListContainer" style="display: none;">
+                <h3>Upcoming Stations</h3>
+                <ul id="stationList"></ul>
+            </div>
+            
+            <div class="track-container" id="trackContainer" style="display: none;">
+                <div class="track">
+                    <div id="train" class="train"></div>
+                </div>
+                <div class="station-markers" id="stationMarkers"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; Powered by JourneyMate</p>
+    </footer>
+</body>
+</html>

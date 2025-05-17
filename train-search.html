@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Search</title>
+  <link rel="stylesheet" href="train-style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>TRAIN SEARCH</h1>
+    <li>  
+      <span id="datetime" style="font-weight: bold;"></span>
+      <script src="train-search.js"></script>
+  </li>
+    <p id="current-date-time"></p> <!-- Auto-updating date and time -->
+  </header>
+
+  <main>
+    <!-- Train Search Section -->
+    <section class="search-section">
+      <div class="input-row">
+        <div class="input-group">
+          <label for="from-station">From</label><br>
+          <input id="from-station" type="text" placeholder="Enter Station Name">
+        </div>
+        <div class="input-group">
+          <label for="to-station">To</label>
+          <input id="to-station" type="text" placeholder="Enter Station Name">
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <label for="class">Class</label>
+          <select id="class">
+            <option>All Classes</option>
+            <option>AC First Class</option>
+            <option>AC 2-Tier</option>
+            <option>AC 3-Tier</option>
+            <option>Sleeper</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label for="quota">Quota</label>
+          <select id="quota">
+            <option>GENERAL</option>
+            <option>TATKAL</option>
+            <option>SENIOR CITIZEN</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-row">
+        <div class="input-group">
+          <label for="departure-date">Departure Date</label>
+          <input id="departure-date" type="date">
+        </div>
+      </div>
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="flexible-date"> Flexible with Date</label>
+        <label><input type="checkbox" id="disability-concession"> Person with Disability Concession</label>
+        <label><input type="checkbox" id="available-berth"> Trains with Available Berth</label>
+        <label><input type="checkbox" id="connecting-journey"> Connecting Journey Booking</label>
+        <label><input type="checkbox" id="railway-pass"> Railway Pass Concession</label>
+      </div>
+      <button id="search-btn"><a href = "train-available.html">SEARCH TRAINS</button></a>
+    </section>
+
+    <!-- Recent Searches and Favorites Section -->
+    <section class="recent-favorites">
+      <h3>Recent Searches</h3>
+      <div id="recent-searches">
+        <div class="search-card">
+          <p><b>PNVL → DR</b></p>
+          <small>Sun 03 Nov 2024 | All Classes</small>
+        </div>
+      </div>
+      <h3>Favourite Journey</h3>
+      <div id="favorite-journeys">
+        <div class="journey-card">
+          <p><b>PNVL → SWV</b></p>
+          <small>Train No: 11004 | Class: SL | Quota: GN</small>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="trainscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC - My Transactions</title>
+    <link rel="stylesheet" href="transaction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="transcation.js"></script>
+</head>
+<body>
+    <div class="header">MY TRANSACTIONS</div>
+    <div class="container">
+        <div class="menu-item" onclick="navigate('mybookings.html')">My Bookings <span>&#9654;</span></div>
+        <div class="menu-item" onclick="navigate('failed.html')">Failed Transactions <span>&#9654;</span></div>
+        <div class="menu-item" onclick="navigate('cancel ticket.html')">Cancelled Tickets <span>&#9654;</span></div>
+        <div class="menu-item" onclick="navigate('tdr.html')">TDR History <span>&#9654;</span></div>
+        <div class="menu-item" onclick="navigate('refund.html')">Ticket Refund History <span>&#9654;</span></div>
+        <div class="ad-section">
+            <img src="ad-placeholder.jpg" alt="Advertisement" width="100%">
+        </div>
+    </div>
+    <div class="footer-nav">
+        <button class="nav-btn active">
+          <i class="fas fa-home"></i> <!-- Home Icon -->
+          <span><a href ="homepage.html">Home</span></a>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-user"></i> <!-- Account Icon -->
+          <span><a href="myaccount.html">Account</span></a>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-shopping-cart"></i> <!-- Shop Icon -->
+          <span>Shop</span>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-money-check-alt"></i> <!-- Transactions Icon -->
+          <span><a href="transaction.html">Transaction</span></a>
+        </button>
+        <button class="nav-btn">
+          <i class="fas fa-ellipsis-h"></i> <!-- More Icon -->
+          <span>More</span>
+        </button>
+      </div>
+    </div>
+</body>
+</html>
+

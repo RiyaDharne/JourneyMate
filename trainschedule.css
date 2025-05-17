@@ -1,0 +1,126 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.header-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Train Schedule */
+.schedule-container {
+  padding: 15px;
+}
+
+.train-card {
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.train-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.train-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.class-buttons {
+  margin-top: 10px;
+}
+
+.class-btn {
+  background: #ff7e5f;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.class-btn:hover {
+  background: #feb47b;
+}
+
+/* Footer Navigation */
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-btn i {
+  font-size: 18px;
+}
+
+.nav-btn.active {
+  color: #ff7e5f;
+}
+
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.nav-btn.active {
+  color: #ff7e5f;
+}

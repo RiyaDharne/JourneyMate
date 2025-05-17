@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header p {
+    margin: 5px 0 0;
+    font-size: 12px;
+  }
+  
+  /* Search Section */
+  .search-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .input-group:last-child {
+    margin-right: 0;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background: #ff5722;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #ff784e;
+  }
+  
+  /* Recent and Favorites */
+  .recent-favorites {
+    margin: 10px auto;
+    max-width: 600px;
+  }
+  
+  .recent-favorites h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .search-card, .journey-card {
+    padding: 15px;
+    background: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  

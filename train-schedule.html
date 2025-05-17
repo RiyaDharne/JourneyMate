@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule</title>
+    <link rel="stylesheet" href="train-schedule.css">
+    
+    <link rel="icon" type="image/png" href="JourneyMate-Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h2>TRAIN SCHEDULE</h2>
+        <h3>Enter Train Number to View Status</h3>
+        <div class="train-input-container">
+            <input type="text" id="trainNumber" placeholder="Enter Train Number (e.g., 12051)" />
+            <button id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <!-- Schedule Section -->
+    <div class="schedule-container">
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th>Train No.</th>
+                    <th>Train Name</th>
+                    <th>Status</th>
+                    <th>Day</th>
+                    <th>Dist (kms)</th>
+                </tr>
+            </thead>
+            <tbody id="scheduleBody">
+                <!-- Train schedule data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer Navigation Section -->
+    <div class="footer-nav">
+        <button class="nav-btn active" onclick="navigate('index.php')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </button>
+        <button class="nav-btn" onclick="navigate('myaccount.php')">
+            <i class="fas fa-user"></i>
+            <span>Account</span>
+        </button>
+        <button class="nav-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span><a href="https://www.amazon.in/">Shop</a></span>
+        </button>
+        <button class="nav-btn" onclick="navigate('transaction.php')">
+            <i class="fas fa-money-check-alt"></i>
+            <span>Transaction</span>
+        </button>
+        <button class="nav-btn" onclick="navigate('more.php')">
+            <i class="fas fa-ellipsis-h"></i>
+            <span>More</span>
+        </button>
+    </div>
+
+
+    <script src="train-schedule.js"></script>
+</body>
+</html>
